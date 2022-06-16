@@ -1,3 +1,4 @@
+//Produtos
 const items = [{
         id: 0,
         nome: 'SSD',
@@ -24,6 +25,7 @@ const items = [{
 },
 ];
 
+//Função que inicializa a loja e incrementa produtos ao front.
     inicializarLoja = () => {
         var containerProdutos = document.getElementById('produtos');
         items.map((val)=>{
@@ -37,9 +39,10 @@ const items = [{
         })
     }
 
+//Chamando função para iniciar loja e incrementa quantidade no front.    
     inicializarLoja();
 
-
+//Função de adicionar items ao carrinho.
     atualizarCarrinho = () => {
         var containerCarrinho = document.getElementById('carrinho');
         items.map((val)=>{
@@ -66,6 +69,8 @@ const items = [{
         })
     }
 
+
+//test tittle.    
     let title = "";
     if (typeof document !== "undefined") {
       title = document.title;

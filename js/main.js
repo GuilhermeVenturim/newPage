@@ -45,7 +45,7 @@ const items = [{
 //Função de adicionar items ao carrinho.
     atualizarCarrinho = () => {
         var containerCarrinho = document.getElementById('carrinho');
-        containerCarrinho.innerHTML = "";
+        containerCarrinho.innerHTML = ""; //limpa o carrinho e depois adiciona o produto.
         items.map((val)=>{
             if(val.quantidade > 0){
             containerCarrinho.innerHTML+= `

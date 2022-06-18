@@ -9,3 +9,10 @@
     width: 33.3%;
     padding: 0 20px;
 }
+.img{
+    max-width: 200px;
+    margin: 20px;
+    padding-top: 50px;
+    padding: 10px;
+    padding-bottom: 50px;
+}

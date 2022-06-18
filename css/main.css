@@ -1,3 +1,7 @@
+body{
+    background-color: antiquewhite;
+}
+
 #produtos{
     max-width: 900px;
     margin: 0 30px;

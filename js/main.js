@@ -46,11 +46,11 @@ const items = [{
     atualizarCarrinho = () => {
         var containerCarrinho = document.getElementById('carrinho');
         containerCarrinho.innerHTML = ""; //limpa o carrinho e depois adiciona o produto.
-        items.map((val)=>{
-            if(val.quantidade > 0){
+        items.map((value)=>{
+            if(value.quantidade > 0){
             containerCarrinho.innerHTML+= `
 
-            <p>`+val.nome+` | quantidade: `+val.quantidade+`</p>
+            <p>`+value.nome+` | quantidade: `+value.quantidade+`</p>
             <hr>
 
             `;

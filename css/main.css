@@ -1,5 +1,9 @@
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 body{
-    background-color: antiquewhite;
+    background-color: rgb(246, 244, 242);
     display: flex;
 }
 

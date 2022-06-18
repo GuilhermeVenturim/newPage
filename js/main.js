@@ -1,13 +1,13 @@
 //Produtos
 const items = [{
         id: 0,
-        nome: 'SSD',
+        nome: 'SSD 240GB',
         img:'./img/ssd.jpg',
         quantidade: 0
 },
 {
         id: 1,
-        nome: 'Memória RAM 16GB DDR4 2400Mhz',
+        nome: 'Memória RAM 16GB DDR4 Notebook',
         img:'./img/memoria.jpg',
         quantidade: 0
 },
@@ -49,10 +49,12 @@ const items = [{
         items.map((value)=>{
             if(value.quantidade > 0){
             containerCarrinho.innerHTML+= `
-
-            <p>`+value.nome+` | quantidade: `+value.quantidade+`</p>
+            <div class="info-carrinho">
+            <p style="float:left;">Produto: `+value.nome+`</p>
+            <p style="float:right;">Quantidade: `+value.quantidade+`</p>
+            <div style="clear:both"></div>
             <hr>
-
+            </div>
             `;
             }
         })
